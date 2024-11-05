@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+  <style>
+    body {
+      background-color: #e5ddd5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .header {
+      background-color: #075e54;
+      color: white;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+    }
+
+    .header-title {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-left: 10px;
+    }
+
+    .chat-container {
+      max-width: 100%;
+      margin: 0 auto;
+      background: #e5ddd5;
+      padding: 10px;
+      min-height: calc(100vh - 120px);
+    }
+    
+    .message {
+      display: flex;
+      margin-bottom: 5px;
+    }
+    
+    .message-bubble {
+      max-width: 85%;
+      padding: 6px 12px;
+      border-radius: 7.5px;
+      position: relative;
+      margin: 2px 0;
+      box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
+    }
+    
+    .sent {
+      justify-content: flex-end;
+    }
+    
+    .sent .message-bubble {
+      background: #e1ffc7;
+      margin-left: auto;
+    }
+    
+    .received .message-bubble {
+      background: white;
+    }
+    
+    .message-text {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #303030;
+    }
+
+    .time {
+      font-size: 11px;
+      color: #667781;
+      float: left;
+      margin-right: 4px;
+      margin-top: 2px;
+    }
+
+    .double-check {
+      color: #4fc3f7;
+      font-size: 11px;
+      margin-right: 4px;
+    }
+
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #f0f0f0;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .input-box {
+      flex: 1;
+      background: white;
+      border-radius: 20px;
+      padding: 8px 12px;
+      margin: 0 8px;
+      color: #666;
+    }
+
+    .mic-button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #00a884;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-title">
+      <div class="profile-image"></div>
+      <div>החתן לא נמצא</div>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <div class="message sent">
+      <div class="message-bubble">
+        <div class="message-text">אני צריכה לשאול שאלה</div>
+        <span class="time">13:29</span>
+        <span class="double-check">✓✓</span>
+      </div>
+    </div>
+    
+    <div class="message received">
+      <div class="message-bubble">
+        <div class="message-text">אשמח לסייע</div>
+        <span class="time">13:37</span>
+      </div>
+    </div>
+    
+    <div class="message sent">
+      <div class="message-bubble">
+        <div class="message-text">מה מתחיל באות א והוא פרי יש לו צבע ירוק מבחוץ ואדום מבפנים</div>
+        <span class="time">14:37</span>
+        <span class="double-check">✓✓</span>
+      </div>
+    </div>
+    
+    <div class="message received">
+      <div class="message-bubble">
+        <div class="message-text">אין לי מושג תני לי רמז</div>
+        <span class="time">14:39</span>
+      </div>
+    </div>
+    
+    <div class="message sent">
+      <div class="message-bubble">
+        <div class="message-text">אוכלים בקיץ בים</div>
+        <span class="time">14:40</span>
+        <span class="double-check">✓✓</span>
+      </div>
+    </div>
+    
+    <div class="message received">
+      <div class="message-bubble">
+        <div class="message-text">האם הוא גדול</div>
+        <span class="time">14:58</span>
+      </div>
+    </div>
+    
+    <div class="message sent">
+      <div class="message-bubble">
+        <div class="message-text">כן</div>
+        <span class="time">15:00</span>
+        <span class="double-check">✓✓</span>
+      </div>
+    </div>
+    
+    <div class="message received">
+      <div class="message-bubble">
+        <div class="message-text">מנחש אבטיח</div>
+        <span class="time">15:01</span>
+      </div>
+    </div>
+    
+    <div class="message sent">
+      <div class="message-bubble">
+        <div class="message-text">צודק!</div>
+        <span class="time">15:02</span>
+        <span class="double-check">✓✓</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="input-box">הקלד/י הודעה</div>
+    <div class="mic-button">🎤</div>
+  </div>
+</body>
+</html>
